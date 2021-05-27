@@ -50,7 +50,7 @@ public class ContactUsSteps {
 		for (String winHandle : driver.getWindowHandles()) {
 			driver.switchTo().window(winHandle);
 		}
-		driver.findElement(By.id("input[name='first_name']")).sendKeys("Tom");
+		driver.findElement(By.cssSelector("input[name='first_name']")).sendKeys("Tom");
 	}
 
 	@When("^I enter a valid last name$")

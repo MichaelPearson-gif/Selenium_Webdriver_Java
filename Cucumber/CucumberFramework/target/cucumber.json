@@ -1,241 +1,326 @@
 [
   {
-    "line": 1,
+    "line": 2,
     "elements": [
       {
         "before": [
           {
             "result": {
-              "duration": 2116304300,
+              "duration": 2121539800,
               "status": "passed"
             },
             "match": {
-              "location": "LoginSteps.setup()"
+              "location": "ContactUsSteps.setup()"
             }
           }
         ],
         "line": 4,
-        "name": "Login into account with correct credentials",
+        "name": "Submit valid data via contact us form",
         "description": "",
-        "id": "login-into-account;login-into-account-with-correct-credentials",
+        "id": "submit-data-to-webdriveruniversity.com-using-contact-us-form;submit-valid-data-via-contact-us-form",
+        "after": [
+          {
+            "result": {
+              "duration": 787398000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ContactUsSteps.tearDown()"
+            }
+          }
+        ],
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 1468553700,
+              "duration": 1073502100,
               "status": "passed"
             },
             "line": 5,
-            "name": "User navigates to stackoverflow website",
+            "name": "I access webdriveruniversity",
             "match": {
-              "location": "LoginSteps.user_navigates_to_stackoverflow_website()"
+              "location": "ContactUsSteps.i_access_webdriveruniversity()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 433652700,
+              "duration": 90575200,
               "status": "passed"
             },
             "line": 6,
-            "name": "User clicks on the login button on homepage",
+            "name": "I click on the contact us button",
             "match": {
-              "location": "LoginSteps.user_clicks_on_the_login_button_on_homepage()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 3091340499,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "User enters a valid username",
-            "match": {
-              "location": "LoginSteps.user_enters_a_valid_username()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 76621300,
-              "status": "passed"
-            },
-            "line": 8,
-            "name": "User enters a valid password",
-            "match": {
-              "location": "LoginSteps.user_enters_a_valid_password()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 53745800,
-              "status": "passed"
-            },
-            "line": 9,
-            "name": "User clicks on the login button",
-            "match": {
-              "location": "LoginSteps.user_clicks_on_the_login_button()"
+              "location": "ContactUsSteps.i_click_on_the_contact_us_button()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 5057444500,
-              "error_message": "junit.framework.AssertionFailedError: expected:\u003cfalse\u003e but was:\u003ctrue\u003e\r\n\tat junit.framework.Assert.fail(Assert.java:57)\r\n\tat junit.framework.Assert.failNotEquals(Assert.java:329)\r\n\tat junit.framework.Assert.assertEquals(Assert.java:78)\r\n\tat junit.framework.Assert.assertEquals(Assert.java:174)\r\n\tat junit.framework.Assert.assertEquals(Assert.java:181)\r\n\tat CucumberFramework.steps.LoginSteps.user_should_be_taken_to_the_successful_login_page(LoginSteps.java:68)\r\n\tat ✽.Then User should be taken to the successful login page(Login.feature:10)\r\n",
-              "status": "failed"
+              "duration": 647593300,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I enter a valid first name",
+            "match": {
+              "location": "ContactUsSteps.i_enter_a_valid_first_name()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 88649300,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I enter a valid last name",
+            "match": {
+              "location": "ContactUsSteps.i_enter_a_valid_last_name(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "woods",
+                  "jackson",
+                  "jones"
+                ],
+                "line": 9
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 65348000,
+              "status": "passed"
             },
             "line": 10,
-            "name": "User should be taken to the successful login page",
+            "name": "I enter a valid email address",
             "match": {
-              "location": "LoginSteps.user_should_be_taken_to_the_successful_login_page()"
+              "location": "ContactUsSteps.i_enter_a_valid_email_address()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 106983100,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I enter comments",
+            "match": {
+              "location": "ContactUsSteps.i_enter_comments(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "example comment one",
+                  "example comment two"
+                ],
+                "line": 12
+              },
+              {
+                "cells": [
+                  "exaaple comment three",
+                  "example commentfour"
+                ],
+                "line": 13
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 54046200,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "I click on the submit button",
+            "match": {
+              "location": "ContactUsSteps.i_click_on_the_submit_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 26600,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "the information should successfully be submitted via the contact us form",
+            "match": {
+              "location": "ContactUsSteps.the_information_should_successfully_be_submitted_via_the_contact_us_form()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 1395167700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ContactUsSteps.setup()"
+            }
+          }
+        ],
+        "line": 17,
+        "name": "Submit valid data via contact us form",
+        "description": "",
+        "id": "submit-data-to-webdriveruniversity.com-using-contact-us-form;submit-valid-data-via-contact-us-form",
+        "after": [
+          {
+            "result": {
+              "duration": 766778400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ContactUsSteps.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 904138500,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "I access webdriveruniversity",
+            "match": {
+              "location": "ContactUsSteps.i_access_webdriveruniversity()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 110731100,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "I click on the contact us button",
+            "match": {
+              "location": "ContactUsSteps.i_click_on_the_contact_us_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 648450900,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "I enter a valid first name",
+            "match": {
+              "location": "ContactUsSteps.i_enter_a_valid_first_name()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 80006400,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "I enter a valid last name",
+            "match": {
+              "location": "ContactUsSteps.i_enter_a_valid_last_name(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "gates",
+                  "bill",
+                  "bruno"
+                ],
+                "line": 22
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 75399800,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "I enter a valid email address",
+            "match": {
+              "location": "ContactUsSteps.i_enter_a_valid_email_address()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 96534500,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "I enter comments",
+            "match": {
+              "location": "ContactUsSteps.i_enter_comments(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "example comment five",
+                  "example comment six"
+                ],
+                "line": 25
+              },
+              {
+                "cells": [
+                  "exaaple comment seven",
+                  "example comment eight"
+                ],
+                "line": 26
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 58707000,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "I click on the submit button",
+            "match": {
+              "location": "ContactUsSteps.i_click_on_the_submit_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 23000,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "the information should successfully be submitted via the contact us form",
+            "match": {
+              "location": "ContactUsSteps.the_information_should_successfully_be_submitted_via_the_contact_us_form()"
             },
             "keyword": "Then "
           }
         ]
       }
     ],
-    "name": "Login into account",
-    "description": "Existing user should be able to login to account using correct credentials",
-    "id": "login-into-account",
+    "name": "Submit data to webdriveruniversity.com using contact us form",
+    "description": "",
+    "id": "submit-data-to-webdriveruniversity.com-using-contact-us-form",
     "keyword": "Feature",
-    "uri": "Login.feature"
-  },
-  {
-    "line": 1,
-    "elements": [
+    "uri": "ContactUs.feature",
+    "tags": [
       {
-        "before": [
-          {
-            "result": {
-              "duration": 1381330700,
-              "status": "passed"
-            },
-            "match": {
-              "location": "LoginSteps.setup()"
-            }
-          }
-        ],
-        "line": 4,
-        "name": "Login into account with correct credentials",
-        "description": "",
-        "id": "login-into-account;login-into-account-with-correct-credentials",
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 7456201,
-              "error_message": "cucumber.api.PendingException: TODO: implement me\r\n\tat CucumberFramework.steps.LoginSteps.user_navigates_to_stackoverflow_website(LoginSteps.java:74)\r\n\tat ✽.Given User navigates to stackoverflow website2(Login2.feature:5)\r\n",
-              "status": "pending"
-            },
-            "line": 5,
-            "name": "User navigates to stackoverflow website2",
-            "match": {
-              "arguments": [
-                {
-                  "val": "2",
-                  "offset": 39
-                }
-              ],
-              "location": "LoginSteps.user_navigates_to_stackoverflow_website(int)"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 6,
-            "name": "User clicks on the login button on homepage2",
-            "match": {
-              "arguments": [
-                {
-                  "val": "2",
-                  "offset": 43
-                }
-              ],
-              "location": "LoginSteps.user_clicks_on_the_login_button_on_homepage(int)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 7,
-            "name": "User enters a valid username2",
-            "match": {
-              "arguments": [
-                {
-                  "val": "2",
-                  "offset": 28
-                }
-              ],
-              "location": "LoginSteps.user_enters_a_valid_username(int)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 8,
-            "name": "User enters a valid password2",
-            "match": {
-              "arguments": [
-                {
-                  "val": "2",
-                  "offset": 28
-                }
-              ],
-              "location": "LoginSteps.user_enters_a_valid_password(int)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 9,
-            "name": "User clicks on the login button2",
-            "match": {
-              "arguments": [
-                {
-                  "val": "2",
-                  "offset": 31
-                }
-              ],
-              "location": "LoginSteps.user_clicks_on_the_login_button(int)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 10,
-            "name": "User should be taken to the successful login page2",
-            "match": {
-              "arguments": [
-                {
-                  "val": "2",
-                  "offset": 49
-                }
-              ],
-              "location": "LoginSteps.user_should_be_taken_to_the_successful_login_page(int)"
-            },
-            "keyword": "Then "
-          }
-        ]
+        "line": 1,
+        "name": "@important"
       }
-    ],
-    "name": "Login into account",
-    "description": "Existing user should be able to login to account using correct credentials",
-    "id": "login-into-account",
-    "keyword": "Feature",
-    "uri": "Login2.feature"
+    ]
   }
 ]
